@@ -1,0 +1,260 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+/* Navbar (Header) */
+.navbar {
+    background-color: #007bff;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .navbar-brand img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar .navbar-nav {
+    margin-left: auto;
+}
+
+.navbar .nav-link {
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #FF5722;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 450px;
+    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 60px; /* Adjusting for navbar height */
+}
+
+.rectangle-hero {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-overlay h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.hero-overlay p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #FF5722;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.4em;
+    cursor: pointer;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #E64A19;
+    transform: scale(1.05);
+}
+
+/* Product Section */
+.product {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product:hover img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.product p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.product button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.product button:hover {
+    background: #0056b3;
+}
+
+/* Product Hover Effects */
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Logo Styling */
+.auth-card .logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+}
+
+
+/* General Auth Page Styles */
+.auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('background-image.png') no-repeat center center/cover; /* Add the generated image here */
+}
+
+.auth-card {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent box */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Box shadow for depth */
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    backdrop-filter: blur(10px); /* Smooth blur effect */
+}
+
+.auth-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Remaining styling stays the same from the previous code */
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #FF5722;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-card input {
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.auth-card input:focus {
+    outline: none;
+    border-color: #FF5722;
+    box-shadow: 0 0 10px rgba(255, 87, 34, 0.7);
+}
+
+.auth-card button {
+    background: #FF5722;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.auth-card button:hover {
+    background: #E64A19;
+    transform: scale(1.05);
+}
+
+.auth-card .alt-action {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.auth-card .alt-action a {
+    color: #FF5722;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-card .alt-action a:hover {
+    text-decoration: underline;
+}
+
+/* Extra Background Opacity */
+.auth-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Slight dark overlay for contrast */
+    z-index: -1;
+}
